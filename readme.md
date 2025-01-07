@@ -15,9 +15,17 @@ This project is a website about West Virginia, created as part of a job intervie
 
 ## Features
 - **Responsive Design**: The website is designed to be fully responsive, ensuring a seamless user experience across devices.
-- **Navigation Menu**: Provides easy access to different pages of the website.
-- **Images**: Use of images to enhance visual appeal and provide context to the content.
+- **Mobile-First Approach**: Optimized for mobile devices with careful attention to typography, spacing, and navigation.
+- **Navigation Menu**: Provides easy access to different pages of the website with improved mobile accessibility.
+- **Images**: Use of images to enhance visual appeal and provide context to the content, with optimized loading for mobile devices.
 - **Structured Layout**: Consistent design across pages with a focus on readability and accessibility.
+
+## Recent Updates
+- Improved mobile responsiveness for the Famous West Virginians section
+- Enhanced navigation bar with white text for city links (Charleston, Huntington, Morgantown)
+- Optimized layout and spacing for better mobile viewing experience
+- Added responsive grid layouts for better content organization
+- Improved image handling and aspect ratios on mobile devices
 
 ## Technologies Used
 - **HTML5**

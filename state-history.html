@@ -1,82 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character encoding, viewport settings, and page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>West Virginia State History</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
-    <meta name="description" content="Explore the rich and complex history of West Virginia, from its Native American cultures to its statehood during the Civil War and beyond.">
-
-    <!-- Open Graph Meta Tags for social media sharing -->
-    <meta property="og:title" content="West Virginia State History">
-    <meta property="og:description" content="Explore the rich and complex history of West Virginia, from its Native American cultures to its statehood during the Civil War and beyond.">
+    <title>West Virginia State History | A Journey Through Time</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore the rich and complex history of West Virginia, from its Native American heritage through the Civil War to modern times. Discover the people and events that shaped the Mountain State.">
+    
+    <meta property="og:title" content="West Virginia State History | A Journey Through Time">
+    <meta property="og:description" content="Discover the fascinating history of West Virginia - from Native American settlements to Civil War statehood and beyond. Experience the story of the Mountain State.">
+    <meta property="og:image" content="img/national-register-of.jpg">
     <meta property="og:url" content="https://yourwebsite.com/state-history.html">
+    <meta property="og:type" content="website">
 </head>
-<body style="background-color: #e0f7fa;"> <!-- Set background color for the entire page -->
-<header>
-    <h1>West Virginia State History</h1> <!-- Main header for the page -->
-</header>
+<body>
 
-<!-- Main navigation menu -->
-<nav aria-label="Main Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduction.html">Introduction to WV</a></li>
-        <li><a href="state-history.html">State History</a></li>
-        <li><a href="fun-facts.html">Fun Facts about WV</a></li>
-        <li><a href="charleston.html">Charleston</a></li>
-        <li><a href="huntington.html">Huntington</a></li>
-        <li><a href="morgantown.html">Morgantown</a></li>
-    </ul>
-</nav>
+    <header class="vintage-header history-header">
+        <div class="paper-texture"></div>
+        <div class="ink-splatter"></div>
+        <div class="header-content">
+            <div class="title-wrapper">
+                <h1>
+                    <span class="title-line">The History of</span>
+                    <span class="title-line highlight">West Virginia</span>
+                </h1>
+            </div>
+            <p class="tagline">A Journey Through Time</p>
+            <div class="timeline-accent"></div>
+        </div>
+    </header>
 
-<!-- Main content section -->
-<main>
-    <!-- Section on early history -->
-    <section>
-        <h2>Early History</h2>
-        <p>West Virginia's early history is rich with Native American cultures. The first inhabitants were the Paleo-Indians, arriving before 11,000 BC. Over time, various Archaic cultures developed, followed by the Adena culture around 1000 BC, known for their ceremonial burial mounds. The Adena were succeeded by the Hopewell culture and later the Fort Ancient people, who dominated the region until around 1650 (<a href="https://www.wvencyclopedia.org/articles/1913" target="_blank">E-WV | Prehistoric People, n.d.</a>).</p>
-    </section>
+    <nav class="sticky-nav" aria-label="Main Navigation">
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">About WV</a></li>
+                <li><a href="state-history.html" class="active">History</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Cities</a>
+                    <div class="dropdown-content">
+                        <a href="charleston.html">Charleston</a>
+                        <a href="huntington.html">Huntington</a>
+                        <a href="morgantown.html">Morgantown</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Section on statehood -->
-    <section>
-        <h2>Statehood</h2>
-        <p>West Virginia became a state during the Civil War. When Virginia seceded from the Union in 1861, the western regions opposed the decision. This led to the formation of West Virginia, which was admitted to the Union on June 20, 1863. The state's creation was a unique event in American history, as it was the only state formed by seceding from a Confederate state (<a href="https://www.census.gov/newsroom/stories/west-virginia-admission-anniversary.html" target="_blank">US Census Bureau, 2023</a>).</p>
-    </section>
+    <main class="history-main">
+        <!-- Timeline Section -->
+        <section class="timeline">
+            <h2>Key Historical Periods</h2>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Pre-Colonial Era (Before 1600s)</h3>
+                        <img src="img/616058d189b3.jpg" alt="Native American artifacts and cultural heritage" loading="lazy">
+                        <p>The region was home to various Native American cultures, including the Paleo-Indians, Adena, and Fort Ancient peoples. The Adena culture, known for their burial mounds, flourished from 1000 BC.</p>
+                    </div>
+                </div>
 
-    <!-- Section on 20th-century history -->
-    <section>
-        <h2>20th Century</h2>
-        <p>The 20th century saw significant industrial growth in West Virginia, particularly in coal mining and glass manufacturing. The state played a crucial role in both World Wars, with facilities like the Greenbrier resort being used as a hospital during WWII. The century also witnessed important legal decisions, such as the 1943 Supreme Court case that protected students' rights to refuse saluting the flag on religious grounds (<a href="https://www.jstor.org/stable/4377871" target="_blank">New Subsidiaries, 1987</a>).</p>
-    </section>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Colonial Period (1600s-1776)</h3>
+                        <img src="img/61605924e3.jpg" alt="Early colonial settlement in West Virginia" loading="lazy">
+                        <p>European settlement began in the early 1700s. The region was contested between various colonial powers and Native American nations. The first permanent settlement was established in 1727.</p>
+                    </div>
+                </div>
 
-    <!-- Sidebar with historical figures and important dates -->
-    <aside>
-        <!-- List of notable historical figures -->
-        <h2>Historical Figures</h2>
-        <ul>
-            <li><a href="https://www.britannica.com/biography/John-Brown-American-abolitionist" target="_blank">John Brown</a> - Led the raid on Harpers Ferry in 1859, an event that escalated tensions leading to the Civil War.</li>
-            <li><a href="https://www.wvencyclopedia.org/articles/1574" target="_blank">Mother Jones</a> - Labor activist known for her work in promoting workers' rights and her involvement in major labor strikes.</li>
-            <li><a href="https://www.af.mil/About-Us/Biographies/Display/Article/107519/brigadier-general-charles-e-chuck-yeager/" target="_blank">Chuck Yeager</a> - Born in Myra, WV, he was the first pilot to break the sound barrier in 1947.</li>
-        </ul>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Path to Statehood (1861-1863)</h3>
+                        <img src="img/wv-state-capitol.jpg" alt="West Virginia State Capitol - Symbol of statehood" loading="lazy">
+                        <p>During the Civil War, West Virginia separated from Virginia, becoming the only state formed by seceding from a Confederate state. President Lincoln signed the statehood bill on December 31, 1862.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- List of important dates in West Virginia's history -->
-        <h2>Important Dates</h2>
-        <ol>
-            <li><a href="https://www.wvencyclopedia.org/articles/1266" target="_blank">June 20, 1863</a> - West Virginia is admitted to the Union.</li>
-            <li><a href="https://www.history.com/news/americas-largest-labor-uprising-the-battle-of-blair-mountain" target="_blank">August 25 to September 2, 1921</a> - The Battle of Blair Mountain, the largest labor uprising in U.S. history.</li>
-            <li><a href="https://wchstv.com/news/local/monday-marks-52-years-since-buffalo-creek-disaster" target="_blank">February 26, 1972</a> - The Buffalo Creek Disaster, a devastating coal slurry dam collapse.</li>
-        </ol>
-    </aside>
-</main>
+        <section class="industrial-heritage">
+            <h2>Industrial Heritage</h2>
+            <div class="heritage-grid">
+                <div class="heritage-card">
+                    <img src="img/babcock.jpg" alt="Historic Coal Mining Operation in West Virginia" class="heritage-image">
+                    <div class="heritage-content">
+                        <h3>Coal Mining</h3>
+                        <p>Coal mining has shaped West Virginia's economy and culture. The industry brought significant development but also struggles, including the famous Battle of Blair Mountain in 1921.</p>
+                    </div>
+                </div>
+                <div class="heritage-card">
+                    <img src="img/ka_8.jpg" alt="Historic Railroad in West Virginia" class="heritage-image">
+                    <div class="heritage-content">
+                        <h3>Railroad Era</h3>
+                        <p>The railroad system transformed West Virginia, connecting remote areas with thriving industrial growth. The B&O Railroad played a crucial role in the state's development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Footer section -->
-<footer>
-    <p>&copy; 2024 West Virginia Tourism</p> <!-- Footer content with copyright notice -->
-</footer>
+        <section class="historical-figures">
+            <h2>Notable Historical Figures</h2>
+            <div class="figures-grid">
+                <div class="figure-card">
+                    <img src="img/616058d.jpg" alt="Mother Jones - Labor Rights Activist" class="figure-image">
+                    <div class="figure-content">
+                        <h3>Mother Jones</h3>
+                        <p>"The Most Dangerous Woman in America" fought for workers' rights and played a crucial role in the Mine Wars.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
 
-<!-- Link to external JavaScript file -->
-<script src="script.js"></script>
+                <div class="figure-card">
+                    <img src="img/chuck-yeager.jpg" alt="Chuck Yeager - First person to break the sound barrier" class="figure-image">
+                    <div class="figure-content">
+                        <h3>Chuck Yeager</h3>
+                        <p>The first pilot to break the sound barrier, born in Myra, WV. His achievements revolutionized aviation.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="figure-card">
+                    <img src="img/61605943d742.jpg" alt="Pearl S. Buck - Nobel and Pulitzer Prize-winning author" class="figure-image">
+                    <div class="figure-content">
+                        <h3>Pearl S. Buck</h3>
+                        <p>Nobel and Pulitzer Prize-winning author born in Hillsboro, WV. Her works bridged Eastern and Western cultures.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-timeline">
+            <h2>Significant Events</h2>
+            <div class="timeline-grid">
+                <div class="event-card">
+                    <div class="event-date">1859</div>
+                    <div class="event-content">
+                        <h3>John Brown's Raid</h3>
+                        <p>The raid on Harpers Ferry heightened tensions leading to the Civil War.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">1921</div>
+                    <div class="event-content">
+                        <h3>Battle of Blair Mountain</h3>
+                        <p>The largest labor uprising in U.S. history, involving 10,000 coal miners.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">1972</div>
+                    <div class="event-content">
+                        <h3>Buffalo Creek Disaster</h3>
+                        <p>A devastating flood that led to major changes in mining safety regulations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Era Section -->
+        <section class="modern-era">
+            <h2>Into the Modern Era</h2>
+            <div class="modern-content">
+                <div class="text-content">
+                    <p>Today, West Virginia continues to evolve, embracing new industries while preserving its rich heritage. The state leads in areas like aerospace, technology, and tourism, while maintaining strong connections to its historical roots in energy and manufacturing.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/wv-natural-beauty.jpg" alt="Modern West Virginia landscape showcasing natural beauty" class="feature-image" loading="lazy">
+                    <p class="image-caption">West Virginia's blend of tradition and progress</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historical-sites">
+            <h2>Visit Historical Sites</h2>
+            <div class="sites-grid">
+                <div class="site-card">
+                    <img src="img/national-register-of.jpg" alt="Harpers Ferry National Historical Park" class="site-image">
+                    <div class="site-content">
+                        <h3>Harpers Ferry</h3>
+                        <p>Experience the convergence of Civil War history, industrial heritage, and natural beauty.</p>
+                        <a href="#" class="plan-visit">Plan Your Visit →</a>
+                    </div>
+                </div>
+
+                <div class="site-card">
+                    <img src="img/wv-state-capitol.jpg" alt="West Virginia Independence Hall" class="site-image">
+                    <div class="site-content">
+                        <h3>Independence Hall</h3>
+                        <p>Visit the birthplace of West Virginia in Wheeling, where statehood was debated and achieved.</p>
+                        <a href="#" class="plan-visit">Plan Your Visit →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#timeline-section">Historical Timeline</a></li>
+                    <li><a href="#industrial-heritage">Industrial Heritage</a></li>
+                    <li><a href="#historical-figures">Historical Figures</a></li>
+                    <li><a href="#historical-sites">Historical Sites</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.wvencyclopedia.org" target="_blank">WV Encyclopedia</a></li>
+                    <li><a href="https://www.wvculture.org" target="_blank">WV Culture & History</a></li>
+                    <li><a href="https://www.nps.gov/state/wv/" target="_blank">National Parks in WV</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 West Virginia Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

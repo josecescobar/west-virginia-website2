@@ -1,284 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character encoding, viewport settings, and page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Facts about West Virginia</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
-    <meta name="description" content="Explore fun and interesting trivia about West Virginia, including its unique attractions, famous people, and historical facts.">
-
-    <!-- Open Graph Meta Tags for social media sharing -->
-    <meta property="og:title" content="Fun Facts about West Virginia">
-    <meta property="og:description" content="Explore fun and interesting trivia about West Virginia, including its unique attractions, famous people, and historical facts.">
+    <title>Fun Facts About West Virginia | Mountain State Trivia</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Discover fascinating facts about West Virginia! From hidden gems to record-breaking attractions, explore what makes the Mountain State unique.">
+    
+    <meta property="og:title" content="Fun Facts About West Virginia | Mountain State Trivia">
+    <meta property="og:description" content="Discover fascinating facts about West Virginia! From hidden gems to record-breaking attractions, explore what makes the Mountain State unique.">
     <meta property="og:image" content="images/the-greenbrier.png">
     <meta property="og:url" content="https://yourwebsite.com/fun-facts.html">
-
-    <!-- Internal CSS for styling specific elements on the page -->
-    <style>
-        /* Styling for featured images */
-        .featured-image {
-            width: 100%;
-            max-width: 800px; /* Set a max-width for large images */
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 20px 0; /* Margin around images */
-        }
-
-        /* Styling for image source text */
-        .image-source {
-            font-size: 0.9em;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        /* Padding at the bottom of main content */
-        main {
-            padding-bottom: 20px;
-        }
-
-        /* Table Styles for uniform and visually appealing tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 1.2em;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Styling for table captions */
-        caption {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            text-align: left;
-            color: #003366;
-            font-weight: bold;
-        }
-
-        /* Styling for table headers */
-        thead th {
-            background-color: #003366;
-            color: white;
-            text-align: left;
-            padding: 10px;
-            border-bottom: 2px solid #dddddd;
-        }
-
-        /* Styling for table body cells */
-        tbody td {
-            border-bottom: 1px solid #dddddd;
-            padding: 10px;
-            color: #333;
-            text-align: left;
-        }
-
-        /* Alternating row background color for better readability */
-        tbody tr:nth-child(even) {
-            background-color: #f4f4f4;
-        }
-
-        /* Hover effect for table rows */
-        tbody tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -4px 2px -2px gray;
-        }
-
-        /* Remove default margins from footer paragraphs */
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <meta property="og:type" content="website">
 </head>
-<body style="background-color: #e0f7fa;"> <!-- Set background color for the entire page -->
-<header>
-    <h1>Fun Facts about West Virginia</h1> <!-- Main header for the page -->
-</header>
+<body>
 
-<!-- Main navigation menu -->
-<nav aria-label="Main Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduction.html">Introduction to WV</a></li>
-        <li><a href="state-history.html">State History</a></li>
-        <li><a href="fun-facts.html">Fun Facts about WV</a></li>
-        <li><a href="charleston.html">Charleston</a></li>
-        <li><a href="huntington.html">Huntington</a></li>
-        <li><a href="morgantown.html">Morgantown</a></li>
-    </ul>
-</nav>
+    <header class="page-header creative-header">
+        <div class="header-background">
+            <div class="animated-gradient"></div>
+            <div class="particle-overlay"></div>
+        </div>
+        <div class="header-content">
+            <div class="title-wrapper">
+                <h1>
+                    <span class="title-line">Fun Facts About</span>
+                    <span class="title-line highlight">West Virginia</span>
+                </h1>
+            </div>
+            <p class="tagline">Discover the Mountain State's Hidden Gems</p>
+            <div class="header-accent"></div>
+        </div>
+    </header>
 
-<!-- Main content section -->
-<main>
-    <!-- Sidebar with additional trivia -->
-    <aside>
-        <h2>Did You Know?</h2>
-        <p>West Virginia is the only state completely within the Appalachian Mountain range, earning it the nickname "The Mountain State".</p>
-    </aside>
+    <nav class="sticky-nav" aria-label="Main Navigation">
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">About WV</a></li>
+                <li><a href="state-history.html">History</a></li>
+                <li><a href="fun-facts.html" class="active">Fun Facts</a></li>
+                <li class="dropdown">
+                    <a href="cities.html" class="dropbtn" onclick="return false;">Cities</a>
+                    <div class="dropdown-content">
+                        <a href="charleston.html">Charleston</a>
+                        <a href="huntington.html">Huntington</a>
+                        <a href="morgantown.html">Morgantown</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Section with trivia facts -->
-    <section>
-        <h2>Almost Heaven Trivia</h2>
-        <table>
-            <caption>Interesting Facts about West Virginia</caption>
-            <thead>
-            <tr>
-                <th>Fact</th>
-                <th>Description</th>
-                <th>Source</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Row with information about forest coverage in West Virginia -->
-            <tr>
-                <td>Forest Coverage</td>
-                <td>Nearly 80% of West Virginia is covered by forests, making it the third most forested state.</td>
-                <td><a href="https://www.ajc.com" target="_blank">AJC</a></td>
-            </tr>
-            <!-- Row with information about the Appalachian range -->
-            <tr>
-                <td>Appalachian Range</td>
-                <td>West Virginia is the only state within the Appalachian Mountain range.</td>
-                <td><a href="https://thefactfile.org" target="_blank">The Fact File</a></td>
-            </tr>
-            <!-- Row with information about the name origin of West Virginia -->
-            <tr>
-                <td>Name Origin</td>
-                <td>The state was originally going to be named "Kanawha" to honor a Native American tribe before "West Virginia" was chosen.</td>
-                <td><a href="https://wvtourism.com" target="_blank">WV Tourism</a></td>
-            </tr>
-            <!-- Row with information about the first rural mail service -->
-            <tr>
-                <td>First Rural Mail Service</td>
-                <td>The first rural free delivery mail service in the U.S. began in 1896 as a Post Office Department pilot program in Charles Town.</td>
-                <td><a href="https://wvtourism.com" target="_blank">WV Tourism</a></td>
-            </tr>
-            <!-- Row with information about the oldest dime store -->
-            <tr>
-                <td>Oldest Dime Store</td>
-                <td>Harrisville is home to America's oldest continuously operating dime store, Berdine's Five and Dime, which opened in 1908.</td>
-                <td><a href="https://thefactfile.org" target="_blank">The Fact File</a></td>
-            </tr>
-            <!-- Row with information about the youngest and oldest governor -->
-            <tr>
-                <td>Youngest and Oldest Governor</td>
-                <td>Cecil Underwood was the state's youngest governor at age 34 in 1957 and oldest governor at age 74 in 1996.</td>
-                <td><a href="https://wvtourism.com" target="_blank">WV Tourism</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
+    <main class="fun-facts-main">
 
-    <!-- Section with unique attractions -->
-    <section>
-        <h2>Weird and Wonderful Attractions</h2>
-        <table>
-            <caption>Unique Attractions in West Virginia</caption>
-            <thead>
-            <tr>
-                <th>Attraction</th>
-                <th>Description</th>
-                <th>Source</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Row with information about The Palace of Gold -->
-            <tr>
-                <td>The Palace of Gold</td>
-                <td>A lavish Hare Krishna temple and shrine in Moundsville.</td>
-                <td><a href="https://atlasobscura.com" target="_blank">Atlas Obscura</a></td>
-            </tr>
-            <!-- Row with information about The Mothman Museum -->
-            <tr>
-                <td>The Mothman Museum</td>
-                <td>Dedicated to the legendary creature in Point Pleasant.</td>
-                <td><a href="https://onlyinyourstate.com" target="_blank">Only in Your State</a></td>
-            </tr>
-            <!-- Row with information about Trans-Allegheny Lunatic Asylum -->
-            <tr>
-                <td>Trans-Allegheny Lunatic Asylum</td>
-                <td>A historic, hand-cut stone masonry psychiatric hospital in Weston.</td>
-                <td><a href="https://atlasobscura.com" target="_blank">Atlas Obscura</a></td>
-            </tr>
-            <!-- Row with information about the World's Largest Teapot -->
-            <tr>
-                <td>World's Largest Teapot</td>
-                <td>A 14-foot tall steel teapot in Chester.</td>
-                <td><a href="https://onlyinyourstate.com" target="_blank">Only in Your State</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
+        <section class="quick-stats">
+            <h2>Quick Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">80%</span>
+                    <p>Forest Coverage</p>
+                    <small>Third most forested state in the U.S.</small>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1863</span>
+                    <p>Year of Statehood</p>
+                    <small>35th state to join the Union</small>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24,230</span>
+                    <p>Square Miles</p>
+                    <small>41st largest state</small>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">4,863</span>
+                    <p>Highest Point (ft)</p>
+                    <small>Spruce Knob</small>
+                </div>
+            </div>
+        </section>
 
-    <!-- Section with famous people from West Virginia -->
-    <section>
-        <h2>Notable West Virginians</h2>
-        <table>
-            <caption>Famous People from West Virginia</caption>
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Achievement</th>
-                <th>Source</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Row with information about Steve Harvey -->
-            <tr>
-                <td>Steve Harvey</td>
-                <td>Comedian, TV host, and author, currently hosting Family Feud.</td>
-                <td><a href="https://libguides.wvu.edu" target="_blank">WVU Libraries</a></td>
-            </tr>
-            <!-- Row with information about Brad Paisley -->
-            <tr>
-                <td>Brad Paisley</td>
-                <td>Country music star and proud WVU Mountaineer.</td>
-                <td><a href="https://robinettelaw.com" target="_blank">Robinette Law</a></td>
-            </tr>
-            <!-- Row with information about Don Knotts -->
-            <tr>
-                <td>Don Knotts</td>
-                <td>Beloved actor known for his role as Deputy Barney Fife on The Andy Griffith Show.</td>
-                <td><a href="https://libguides.wvu.edu" target="_blank">WVU Libraries</a></td>
-            </tr>
-            <!-- Row with information about Chuck Yeager -->
-            <tr>
-                <td>Chuck Yeager</td>
-                <td>Legendary test pilot, the first person to break the sound barrier.</td>
-                <td><a href="https://robinettelaw.com" target="_blank">Robinette Law</a></td>
-            </tr>
-            <!-- Row with information about Mary Lou Retton -->
-            <tr>
-                <td>Mary Lou Retton</td>
-                <td>Olympic gold medal gymnast and America's sweetheart in the 1984 games.</td>
-                <td><a href="https://libguides.wvu.edu" target="_blank">WVU Libraries</a></td>
-            </tr>
-            <!-- Row with information about Jerry West -->
-            <tr>
-                <td>Jerry West</td>
-                <td>NBA icon who became the silhouette in the league's logo.</td>
-                <td><a href="https://robinettelaw.com" target="_blank">Robinette Law</a></td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
+        <section class="fact-categories">
+            <h2>Explore West Virginia Facts</h2>
+            <div class="category-grid">
+                <div class="category-card nature-facts">
+                    <h3>Natural Wonders</h3>
+                    <ul class="fact-list">
+                        <li>Only state completely within Appalachian Mountain range</li>
+                        <li>Home to over 1,000 caves and caverns</li>
+                        <li>Contains the world's second-largest steel arch bridge</li>
+                        <li>Features over 1,500 miles of hiking trails</li>
+                    </ul>
+                </div>
+                
+                <div class="category-card history-facts">
+                    <h3>Historical Firsts</h3>
+                    <ul class="fact-list">
+                        <li>First rural free mail delivery (Charles Town, 1896)</li>
+                        <li>First state formed during the Civil War</li>
+                        <li>First brick street in world (Charleston, 1870s)</li>
+                        <li>First Mother's Day celebration (Grafton, 1908)</li>
+                    </ul>
+                </div>
 
-<!-- Footer section with additional margin and padding -->
-<footer style="margin-top: 20px; padding: 10px 0;">
-    <p>&copy; 2024 West Virginia Tourism</p> <!-- Footer content with copyright notice -->
-</footer>
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+                <div class="category-card unique-facts">
+                    <h3>Unique Attractions</h3>
+                    <ul class="fact-list">
+                        <li>The Greenbrier's secret Cold War bunker</li>
+                        <li>America's oldest dime store (Berdine's, est. 1908)</li>
+                        <li>Palace of Gold - "America's Taj Mahal"</li>
+                        <li>World's largest steerable telescope (Green Bank)</li>
+                    </ul>
+                </div>
+
+                <div class="category-card culture-facts">
+                    <h3>Cultural Heritage</h3>
+                    <ul class="fact-list">
+                        <li>Birthplace of Pearl S. Buck (Nobel laureate)</li>
+                        <li>Home to the Golden Delicious Apple</li>
+                        <li>Origin of pepperoni rolls</li>
+                        <li>Inspiration for "Take Me Home, Country Roads"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="notable-people">
+            <h2>Famous West Virginians</h2>
+            <div class="people-grid">
+                <div class="person-card">
+                    <img src="img/pearlsbuck.jpg" alt="Pearl S. Buck - Nobel Prize-winning author from West Virginia" loading="lazy">
+                    <div class="person-info">
+                        <h3>Pearl S. Buck</h3>
+                        <p>Nobel and Pulitzer Prize-winning author</p>
+                    </div>
+                </div>
+                <div class="person-card">
+                    <img src="img/chuck-yeager.jpg" alt="Chuck Yeager - Legendary test pilot from West Virginia" loading="lazy">
+                    <div class="person-info">
+                        <h3>Chuck Yeager</h3>
+                        <p>First pilot to break the sound barrier</p>
+                    </div>
+                </div>
+                <div class="person-card">
+                    <img src="img/jenngarner.jpg" alt="Jennifer Garner - Actress from Charleston, West Virginia" loading="lazy">
+                    <div class="person-info">
+                        <h3>Jennifer Garner</h3>
+                        <p>Award-winning actress</p>
+                    </div>
+                </div>
+                <div class="person-card">
+                    <img src="img/bradpaisley.jpg" alt="Brad Paisley - Country music star from Glen Dale, West Virginia" loading="lazy">
+                    <div class="person-info">
+                        <h3>Brad Paisley</h3>
+                        <p>Country music star</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fun-quiz">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz-container">
+                <div id="quiz-question" class="quiz-card">
+                    <h3>Did You Know?</h3>
+                    <p>West Virginia was originally going to be named "Kanawha." Click to reveal why the name was changed!</p>
+                    <button id="revealBtn" class="reveal-btn">Reveal Answer</button>
+                    <p id="answer" class="answer hidden">The name was changed to West Virginia to maintain the historical connection to Virginia while asserting its separate identity as a Union state during the Civil War.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title" style="color: #ffffff !important;">Get More Fun Facts!</h2>
+                <p class="newsletter-text" style="color: #ffffff;">Subscribe to receive weekly West Virginia trivia and updates</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#natural-wonders">Natural Wonders</a></li>
+                    <li><a href="#historical-firsts">Historical Firsts</a></li>
+                    <li><a href="#notable-people">Notable People</a></li>
+                    <li><a href="#quiz">Fun Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://wvtourism.com" target="_blank">WV Tourism</a></li>
+                    <li><a href="https://wvencyclopedia.org" target="_blank">WV Encyclopedia</a></li>
+                    <li><a href="#citations">Fact Sources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 West Virginia Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('revealBtn').addEventListener('click', function() {
+            const answer = document.getElementById('answer');
+            answer.classList.toggle('hidden');
+            this.textContent = answer.classList.contains('hidden') ? 'Reveal Answer' : 'Hide Answer';
+        });
+    </script>
 </body>
 </html>

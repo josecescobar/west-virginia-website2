@@ -1,211 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta information for charset, viewport settings, and page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Charleston, WV</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
-    <meta name="description" content="Explore Charleston, West Virginia's vibrant capital city, known for its rich history, culture, and key attractions.">
-
-    <!-- Open Graph Meta Tags for social media sharing -->
-    <meta property="og:title" content="Discover Charleston, WV">
-    <meta property="og:description" content="Explore Charleston, West Virginia's vibrant capital city, known for its rich history, culture, and key attractions.">
-    <meta property="og:image" content="images/charleston-skyline.png">
+    <title>Charleston - West Virginia's Dynamic Capital City</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Discover Charleston, West Virginia's vibrant capital city. Explore cultural attractions, outdoor activities, and rich history in the heart of the Mountain State.">
+    
+    <meta property="og:title" content="Charleston, WV - Capital City Guide">
+    <meta property="og:description" content="Experience the charm of West Virginia's capital city. From the iconic State Capitol to vibrant cultural scenes and outdoor adventures.">
     <meta property="og:url" content="https://yourwebsite.com/charleston.html">
+    <meta property="og:type" content="website">
 </head>
-<body style="background-color: #e0f7fa;"> <!-- Set background color for the entire page -->
+<body>
 
-<header>
-    <h1>Discover Charleston, WV</h1> <!-- Main header for the page -->
-</header>
+    <header class="city-header charleston-header">
+        <div class="cityscape-overlay"></div>
+        <div class="city-lights"></div>
+        <div class="header-content">
+            <div class="title-wrapper">
+                <h1>
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-line highlight">Charleston</span>
+                </h1>
+            </div>
+            <p class="tagline">The Heart of West Virginia</p>
+        </div>
+    </header>
 
-<!-- Main navigation menu -->
-<nav aria-label="Main Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduction.html">Introduction to WV</a></li>
-        <li><a href="state-history.html">State History</a></li>
-        <li><a href="fun-facts.html">Fun Facts about WV</a></li>
-        <li><a href="charleston.html">Charleston</a></li>
-        <li><a href="huntington.html">Huntington</a></li>
-        <li><a href="morgantown.html">Morgantown</a></li>
-    </ul>
-</nav>
+    <nav class="sticky-nav" id="main-nav">
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">About WV</a></li>
+                <li><a href="state-history.html">History</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Cities <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="charleston.html">Charleston</a>
+                        <a href="huntington.html">Huntington</a>
+                        <a href="morgantown.html">Morgantown</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- Main content section with padding added to the bottom -->
-<main style="padding-bottom: 20px;">
-    <section>
-        <h2>City Demographics</h2>
-        <table>
-            <caption>Charleston, WV - Demographic Statistics (2020 Census)</caption>
-            <thead>
-            <tr>
-                <th>Statistic</th>
-                <th>Value</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Table rows with demographic data -->
-            <tr>
-                <td>Population</td>
-                <td>48,864</td>
-            </tr>
-            <tr>
-                <td>Racial/Ethnic Breakdown</td>
-                <td>78.4% White, 15.5% Black or African American, 2.9% Hispanic or Latino, 2.4% Two or More Races, 0.8% Asian</td>
-            </tr>
-            <tr>
-                <td>Median Age</td>
-                <td>41.7 years</td>
-            </tr>
-            <tr>
-                <td>High School Graduates (age 25+)</td>
-                <td>88.1%</td>
-            </tr>
-            <tr>
-                <td>Bachelor's Degree or Higher (age 25+)</td>
-                <td>32.7%</td>
-            </tr>
-            <tr>
-                <td>Largest Ethnic Groups</td>
-                <td>The 5 largest ethnic groups in Charleston are White (77.1%), Black (12.8%), Two+ (5.74%), Asian (2.5%), and Two+ Hispanic (0.694%)</td>
-            </tr>
-            <tr>
-                <td>U.S. Citizenship</td>
-                <td>98.3% of Charleston residents are U.S. citizens</td>
-            </tr>
-            </tbody>
-        </table>
-        <p>Source: <a href="https://datausa.io/profile/geo/charleston-wv/" target="_blank">Charleston, WV | Data USA, n.d.</a></p>
-    </section>
+    <main>
 
-    <section>
-        <h2>Economic Information</h2>
-        <table>
-            <caption>Economic Data for Charleston, WV</caption>
-            <thead>
-            <tr>
-                <th>Aspect</th>
-                <th>Details</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Table rows with economic data -->
-            <tr>
-                <td>Major Industries</td>
-                <td>Government, education, healthcare, retail, tourism</td>
-            </tr>
-            <tr>
-                <td>Economic Revitalization</td>
-                <td>Charleston has worked to revitalize its downtown in recent years to attract new businesses and residents.</td>
-            </tr>
-            <tr>
-                <td>Unemployment Rate</td>
-                <td>5.1% as of March 2022, slightly higher than the national average.</td>
-            </tr>
-            </tbody>
-        </table>
-        <p>As the state capital and a regional business hub, Charleston has a diverse economy with major industries like government, education, healthcare, retail, and tourism.</p>
-        <p>Source: <a href="https://business.wvu.edu/research-outreach/bureau-of-business-and-economic-research/economic-outlook-conferences-and-reports/economic-outlook-reports/west-virginia-economic-outlook-2022-2026" target="_blank">West Virginia Economic Outlook 2022-2026, n.d.</a></p>
-    </section>
+        <section class="city-highlights">
+            <h2>City Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <span class="highlight-number">1885</span>
+                    <p>Year Charleston became the permanent capital</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-number">48,864</span>
+                    <p>Population (2020 Census)</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-number">32.7%</span>
+                    <p>Residents with Bachelor's Degree or Higher</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-number">292'</span>
+                    <p>Elevation above sea level</p>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Geographic Features</h2>
-        <table>
-            <caption>Geographic Information for Charleston, WV</caption>
-            <thead>
-            <tr>
-                <th>Feature</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Table rows with geographic data -->
-            <tr>
-                <td>Location</td>
-                <td>Charleston is located at the confluence of the Kanawha and Elk Rivers in southwestern West Virginia.</td>
-            </tr>
-            <tr>
-                <td>Climate</td>
-                <td>The city has a humid subtropical climate with four distinct seasons.</td>
-            </tr>
-            <tr>
-                <td>Neighborhoods</td>
-                <td>Notable neighborhoods include downtown Charleston, the East End, and the West Side.</td>
-            </tr>
-            </tbody>
-        </table>
-        <img src="images/charleston-skyline.png" alt="Charleston, West Virginia skyline with the Kanawha River in the foreground" class="centered-image" width="800" height="auto"> <!-- Image with alt text and specified width -->
-        <p>Source: <a href="https://en.wikipedia.org/wiki/Charleston,_West_Virginia#Geography" target="_blank">Wikipedia contributors, 2024</a></p>
-    </section>
+        <section class="destinations">
+            <h2>Must-Visit Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="img/wv-state-capitol.jpg" alt="State Capitol Complex at night" loading="lazy">
+                    <div class="destination-content">
+                        <h3>State Capitol Complex</h3>
+                        <p>Marvel at the iconic gold-domed capitol building, one of the most beautiful in America.</p>
+                        <a href="#" class="learn-more">Plan Your Visit →</a>
+                    </div>
+                </div>
 
-    <section>
-        <h2>Key Attractions</h2>
-        <table>
-            <caption>Main Attractions in Charleston, WV</caption>
-            <thead>
-            <tr>
-                <th>Attraction</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Table rows with key attractions -->
-            <tr>
-                <td>West Virginia State Capitol</td>
-                <td>The iconic domed building housing the offices of the Governor and the West Virginia Legislature.</td>
-            </tr>
-            <tr>
-                <td>Clay Center for the Arts & Sciences</td>
-                <td>A center that offers live performances, interactive science exhibits, and an art gallery.</td>
-            </tr>
-            <tr>
-                <td>Capitol Market</td>
-                <td>An outdoor market offering fresh produce, flowers, and local specialties.</td>
-            </tr>
-            <tr>
-                <td>Kanawha State Forest</td>
-                <td>A large state park with hiking, biking, and camping opportunities.</td>
-            </tr>
-            <tr>
-                <td>Charleston Coliseum & Convention Center</td>
-                <td>The premier venue for sports, concerts, and other large events in the city.</td>
-            </tr>
-            <tr>
-                <td>Live on the Levee</td>
-                <td>A summer concert series held along the Kanawha River, featuring free live music performances.</td>
-            </tr>
-            </tbody>
-        </table>
-        <p>Source: <a href="https://wvtourism.com/charleston/" target="_blank">West Virginia Department of Tourism, 2024</a></p>
-    </section>
+                <div class="destination-card">
+                    <img src="img/national-register-of.jpg" alt="Clay Center for Arts and Sciences" loading="lazy">
+                    <div class="destination-content">
+                        <h3>Clay Center</h3>
+                        <p>Explore art, science, and music at this premier cultural and educational institution.</p>
+                        <a href="#" class="learn-more">View Events →</a>
+                    </div>
+                </div>
 
-    <!-- Aside section with notable places and upcoming events -->
-    <aside>
-        <h2>Notable Places/Highlights in Charleston</h2>
-        <ul>
-            <li>State Capitol Complex</li>
-            <li>Charleston Town Center Mall</li>
-            <li>Yeager Airport</li>
-            <li>University of Charleston</li>
-        </ul>
+                <div class="destination-card">
+                    <img src="img/map-of-charleston-wv.jpg" alt="Capitol Market logo and entrance" loading="lazy">
+                    <div class="destination-content">
+                        <h3>Capitol Market</h3>
+                        <p>Experience local flavors at this historic train station turned year-round market.</p>
+                        <a href="#" class="learn-more">Discover More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li>FestivALL Charleston - June</li>
-            <li>Smoke on the Water Chili Cook-off - June</li>
-            <li>Charleston Sternwheel Regatta - July</li>
-            <li>Majorette Festival - August</li>
-        </ul>
-        <p>Source: <a href="https://events.charlestonwv.com/" target="_blank">Charleston WV, n.d.</a></p>
-    </aside>
-</main>
+        <section class="demographics">
+            <h2>City Demographics</h2>
+            <div class="demographics-grid">
+                <div class="demographics-card">
+                    <h3>Population Breakdown</h3>
+                    <ul class="stat-list">
+                        <li><span>White:</span> 78.4%</li>
+                        <li><span>Black or African American:</span> 15.5%</li>
+                        <li><span>Hispanic or Latino:</span> 2.9%</li>
+                        <li><span>Two or More Races:</span> 2.4%</li>
+                        <li><span>Asian:</span> 0.8%</li>
+                    </ul>
+                </div>
+                <div class="demographics-card">
+                    <h3>Education & Employment</h3>
+                    <ul class="stat-list">
+                        <li><span>High School Graduates:</span> 88.1%</li>
+                        <li><span>Bachelor's Degree or Higher:</span> 32.7%</li>
+                        <li><span>Unemployment Rate:</span> 5.1%</li>
+                        <li><span>Major Industries:</span> Government, Healthcare, Education</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<!-- Footer with additional margin and padding -->
-<footer style="margin-top: 20px; padding: 10px 0;">
-    <p>&copy; 2024 West Virginia Tourism</p>
-</footer>
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">JUN</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>FestivALL Charleston</h3>
+                        <p>A city-wide celebration of the arts featuring music, theater, dance, and visual arts.</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">JUN</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Smoke on the Water Chili Cook-off</h3>
+                        <p>Annual chili competition featuring local and regional competitors.</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">JUL</span>
+                        <span class="day">1</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Charleston Sternwheel Regatta</h3>
+                        <p>Celebrate Charleston's river heritage with boat races, music, and fireworks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-map">
+            <h2>Explore Charleston</h2>
+            <div class="map-container">
+                <div class="map-overlay">
+                    <h3>Key Areas</h3>
+                    <ul class="area-list">
+                        <li>Downtown District</li>
+                        <li>East End Historic District</li>
+                        <li>West Side</li>
+                        <li>South Hills</li>
+                    </ul>
+                </div>
+                <img src="img/map-of-charleston-wv.jpg" alt="Map of Charleston, WV" class="city-map">
+            </div>
+            <p class="map-credit">Designed by TownMapsUSA.com</p>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest news and events from Charleston</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#map">City Map</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://charlestonwv.gov" target="_blank">City Website</a></li>
+                    <li><a href="https://wvtourism.com" target="_blank">WV Tourism</a></li>
+                    <li><a href="#visitor-center">Visitor Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Charleston, WV Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

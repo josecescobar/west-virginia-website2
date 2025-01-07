@@ -1,78 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character encoding, viewport settings, and page title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to West Virginia</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <title>West Virginia, WV | Official Tourism Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Discover West Virginia. Experience local attractions, events, and culture in the heart of the Mountain State.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="West Virginia, WV Tourism Guide">
+    <meta property="og:description" content="Plan your visit to West Virginia. Explore attractions, events, and local culture in this beautiful Mountain State destination.">
+    <meta property="og:image" content="img/almost-heaven-wv.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/west-virginia.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body style="background-color: #e0f7fa;"> <!-- Set background color for the entire page -->
+<body>
+    <!-- Notification Container -->
+    <div class="notification-container" id="notification-container"></div>
 
-<header>
-    <h1>Welcome to West Virginia</h1> <!-- Main header for the page -->
-</header>
+    <!-- Header with hero image -->
+    <header class="city-header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/wv-natural-beauty.jpg');">
+        <div class="header-content">
+            <h1>West Virginia</h1>
+            <p class="tagline">The Mountain State</p>
+        </div>
+    </header>
 
-<!-- Main navigation menu -->
-<nav>
-    <ul>
-        <li><a href="introduction.html">Introduction to WV</a></li>
-        <li><a href="state-history.html">State History</a></li>
-        <li><a href="fun-facts.html">Fun Facts about WV</a></li>
-    </ul>
-</nav>
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav" id="main-nav" aria-label="Main Navigation">
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">About WV</a></li>
+                <li><a href="state-history.html">History</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Cities <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="charleston.html">Charleston</a>
+                        <a href="huntington.html">Huntington</a>
+                        <a href="morgantown.html">Morgantown</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- Main content section with added padding at the bottom -->
-<main style="padding-bottom: 20px;">
-    <section>
-        <h2>Key Facts</h2>
-        <!-- Brief overview of West Virginia with a citation -->
-        <p>West Virginia, known as the "Mountain State," became the 35th state of the United States on June 20, 1863. It is located in the Appalachian, Mid-Atlantic, and Southeastern regions of the country. West Virginia shares its borders with Pennsylvania, Maryland, Kentucky, Ohio, and Virginia. The state covers an area of approximately 24,230 square miles, making it the 41st largest state in the U.S. The capital and largest city is Charleston, with a population of around 49,000. West Virginia's highest point is Spruce Knob, which stands at 4,863 feet. <a href="https://www.britannica.com/place/West-Virginia" target="_blank">(Martis & Clagg, 2024)</a></p>
-    </section>
+    <main class="city-main">
+        <!-- Quick Facts Section -->
+        <section class="quick-facts">
+            <h2>State Highlights</h2>
+            <div class="facts-grid">
+                <div class="fact-item">
+                    <span class="fact-number">1863</span>
+                    <p>Year Admitted to the Union</p>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">1.793 million</span>
+                    <p>Population (2020 Census)</p>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">22.2%</span>
+                    <p>Residents with Bachelor's Degree or Higher</p>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">4,863 ft</span>
+                    <p>Elevation above sea level (Spruce Knob)</p>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Notable Cities</h2>
-        <!-- List of notable cities with links to detailed pages -->
-        <ul>
-            <li><a href="charleston.html">Charleston</a></li>
-            <li><a href="huntington.html">Huntington</a></li>
-            <li><a href="morgantown.html">Morgantown</a></li>
-        </ul>
-    </section>
+        <!-- Key Attractions Section -->
+        <section class="attractions" id="attractions">
+            <h2>Must-Visit Destinations</h2>
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up">
+                    <img src="img/lost-paddle-gauley-river.jpg" alt="New River Gorge Bridge spanning across the gorge" loading="lazy">
+                    <div class="card-content">
+                        <h3>New River Gorge</h3>
+                        <p>America's newest national park featuring the iconic 876-foot-high bridge, world-class rock climbing, and whitewater rafting adventures.</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Fayetteville, WV</span>
+                            <span><i class="fas fa-clock"></i> Open Year-round</span>
+                        </div>
+                        <a href="#" class="learn-more">Plan Your Visit <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
 
-    <section>
-        <h2>Geography</h2>
-        <!-- Information about West Virginia's geography with a citation -->
-        <p>West Virginia is located in the Appalachian Mountains region. The state is almost completely covered by mountains, with the highest point being Spruce Knob. Major rivers include the Ohio, Kanawha, Monongahela, and Potomac. The state has a humid continental climate with hot summers and cold winters. <a href="https://www.wvencyclopedia.org/articles/1266" target="_blank">(E-WV | La Belle Ironworks, n.d.)</a></p>
-    </section>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/babcock.jpg" alt="Blackwater Falls cascading through a forested gorge" loading="lazy">
+                    <div class="card-content">
+                        <h3>Blackwater Falls</h3>
+                        <p>Experience the majestic 57-foot cascade surrounded by stunning forest landscapes. Perfect for hiking, photography, and winter sports.</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Davis, WV</span>
+                            <span><i class="fas fa-clock"></i> Dawn to Dusk</span>
+                        </div>
+                        <a href="#" class="learn-more">Explore More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
 
-    <section>
-        <h2>Statehood</h2>
-        <!-- Detailed history of West Virginia's statehood process -->
-        <p>West Virginia officially became the 35th state of the United States on June 20, 1863. The process of statehood was complex and rooted in the turbulent context of the Civil War. The western counties of Virginia, feeling neglected by the state government in Richmond—which was dominated by eastern slave-owning interests—remained loyal to the Union when Virginia seceded in April 1861. This loyalty set the stage for the creation of a new state.</p>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/dolly_sods_bear_rocks.jpg" alt="Dolly Sods Wilderness with its unique landscape and vegetation" loading="lazy">
+                    <div class="card-content">
+                        <h3>Dolly Sods Wilderness</h3>
+                        <p>A unique high-altitude plateau with landscapes reminiscent of Canada, featuring rare plants, scenic hiking trails, and spectacular views.</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Grant County, WV</span>
+                            <span><i class="fas fa-clock"></i> Best: May-October</span>
+                        </div>
+                        <a href="#" class="learn-more">Discover Trails <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>Key milestones in West Virginia's journey to statehood include:</p>
-        <ul>
-            <li><strong>April 1861:</strong> Virginia secedes from the Union; western counties oppose this decision.</li>
-            <li><strong>October 1861:</strong> Residents of 39 western counties vote to form a new state.</li>
-            <li><strong>December 31, 1862:</strong> President Abraham Lincoln signs the statehood bill, with the condition that the new state's constitution provide for the gradual emancipation of slaves.</li>
-            <li><strong>June 20, 1863:</strong> West Virginia is officially admitted to the Union as a slave state with provisions for gradual emancipation.</li>
-        </ul>
+        <!-- Demographics Section -->
+        <section class="demographics">
+            <h2>State Demographics</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Population Breakdown</h3>
+                    <ul class="stat-list">
+                        <li><span>White:</span> 93.5%</li>
+                        <li><span>Black or African American:</span> 3.4%</li>
+                        <li><span>Hispanic or Latino:</span> 1.2%</li>
+                        <li><span>Two or More Races:</span> 2.5%</li>
+                        <li><span>Asian:</span> 0.7%</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Education & Employment</h3>
+                    <ul class="stat-list">
+                        <li><span>High School Graduates:</span> 85.2%</li>
+                        <li><span>Bachelor's Degree or Higher:</span> 22.2%</li>
+                        <li><span>Unemployment Rate:</span> 4.5%</li>
+                        <li><span>Major Industries:</span> Coal mining, manufacturing, tourism</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <p>Arthur I. Boreman was inaugurated as West Virginia's first governor in Wheeling, which served as the state capital until it was moved to Charleston in 1870. The creation of West Virginia was a significant event in the history of the Civil War and the United States, reflecting the complex issues of slavery, states' rights, and loyalty to the Union. <a href="https://www.wvencyclopedia.org/articles/1266" target="_blank">(E-WV | La Belle Ironworks, n.d.)</a></p>
-    </section>
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">June</span>
+                        <span class="day">20</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>West Virginia Day</h3>
+                        <p>Celebrate the state's birthday with parades, festivals, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section style="background-color: #e9e9e9; padding: 20px; border-radius: 10px;"> <!-- Styled section for the economy information -->
-        <h2>Economy</h2>
-        <!-- Overview of West Virginia's economy with a citation -->
-        <p>West Virginia's economy is expected to grow at an average annual rate of 0.9% through 2026, trailing the national average of 1.6%. The state's employment is projected to increase by 0.4% annually over the same period, with growth concentrated in sectors such as leisure and hospitality, professional and business services, and construction. Major challenges for West Virginia's economy include an aging population, low labor force participation, and a reliance on declining industries such as coal mining. <a href="https://researchrepository.wvu.edu/bureau_be/331/" target="_blank">(Gutmann et al., n.d.)</a></p>
-    </section>
-</main>
+        <!-- Interactive Map Section -->
+        <section class="map-section">
+            <h2>Explore West Virginia</h2>
+            <div class="map-container">
+                <img src="img/map-of-charleston-wv.jpg" alt="Map of West Virginia, WV" class="city-map">
+                <div class="map-overlay">
+                    <h3>Key Areas</h3>
+                    <ul class="area-list">
+                        <li>Charleston</li>
+                        <li>Huntington</li>
+                        <li>Morgantown</li>
+                        <li>New River Gorge</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<!-- Footer section with additional margin and padding -->
-<footer style="margin-top: 20px; padding: 10px 0;">
-    <p>&copy; 2024 West Virginia Tourism</p>
-</footer>
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest news and events from West Virginia</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit" class="submit-btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#map">State Map</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://wvtourism.com" target="_blank">WV Tourism</a></li>
+                    <li><a href="https://www.wv.gov" target="_blank">State Government</a></li>
+                    <li><a href="#visitor-center">Visitor Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 West Virginia, WV Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
